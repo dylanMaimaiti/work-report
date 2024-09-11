@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fall 2023 - ADknown</title>
+    <title>Summer 2024 - ADknown</title>
     <link rel="icon" type="icon/x-icon" href="../images/adknownSmall.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -23,8 +23,8 @@
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="./S23.html" class="nav-link">MTO - S23</a></li>
-                    <li class="nav-item"><a href="" class="nav-link active" aria-current="page">ADknown - F23</a></li>
-                    <li class="nav-item"><a href="./S24.html" class="nav-link">ADknown - S24</a></li>
+                    <li class="nav-item"><a href="./F23.html" class="nav-link">ADknown - F23</a></li>
+                    <li class="nav-item"><a href="" class="nav-link active" aria-current="page">ADknown - S24</a></li>
                 </ul>
             </header>
         </div>
@@ -32,14 +32,14 @@
 
     <!-- Basic intro about me -->
     <div class="text-center border-bottom">
-        <h1 class="display-4 fw-bold text-body-emphasis">Software Developer Intern</h1>
+        <h1 class="display-4 fw-bold text-body-emphasis">Software Developer Intern (Again!)</h1>
         <h2 class="display-6 fw-bold">ADknown</h2>
         <h4 class="display-8 fw-bold">Guelph, Ontario</h4>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">This was my second software developer internship and I had a great time
+            <p class="lead mb-4">I returned to ADknown for my third software developer internship and I had a great time
                 doing full-stack web development. I worked on an internal web app used by advertisement campaign
                 managers
-                and wrote a lot of PHP, JavaScript, and SQL queries.
+                and wrote a lot of PHP, React/JavaScript, and SQL queries. This time I had much more responsibilities and got to use AWS.
             </p>
         </div>
         <div class="overflow-hidden">
@@ -64,9 +64,9 @@
                     <li>In the digital marketing industry</li>
                     <li>Sends targeted traffic to specific web properties</li>
                     <li>Uses Search Engine Marketing and Search Engine Optimization to direct traffic</li>
-                    <li>Develops mobile games and has a portfolio of websites</li>
                     <li>Located in Downtown Guelph</li>
-                    <li>Has a fridge with great Monster flavours</li>
+                    <li>Has a fridge with great Monster flavours and protein shakes</li>
+                    <li>Many employees are UofG alumni</li>
                 </ul>
             </div>
         </div>
@@ -79,22 +79,23 @@
             <p class="lead mb-4">I was in a small team responsible for the development and support of a
                 a web application used by campaign managers to direct traffic to certain sites and mobile games.
                 The web app makes it easier for campaign managers to create campaigns and it also has a bunch of
-                features for other company needs.
+                features for other company needs. This term I did a lot more backend tickets focused on adjacent 
+                software systems that interacted with the web app that I worked on before.
             </p>
-            <p class="lead mb-4">I worked on a web app that makes it easier for campaign managers
+            <p class="lead mb-4">Just like last term I worked on a web app that makes it easier for campaign managers
                 to create and manage their ad campaigns. It provides a suite of features
-                that cover a lot of repetitive actions and provides tools to make the marketers more efficient. One such
-                tool
-                that I worked on was an image text overlayer. It took user provided text and an image then would place
-                it over
-                the image along with the target site's logo. This image tool also adjusted text wrapping and font
-                scaling accordingly. I used PHP and the GD image library to create the image and uploaded them to an S3
-                bucket.
+                that cover a lot of repetitive actions and provides tools to make the marketers more efficient.
+                This term I was given more important features to implement and some of those were CRON jobs that ran 
+                on a schedule. I developed a feature that would detect 'bad' users that wouldn't generate revenue when
+                they clicked ads. I added some new logic to existing click tracking code and also created new Lambdas, EventBridge rules,
+                and S3 buckets which would detect these users and block their IP address from seeing ads for 24 hours using an existing
+                MySQL table. 
             </p>
             <p class="lead mb-4">
-                During my term I worked on a lot of tickets that were full-stack features and updates. I wrote
-                React/JavaScript for the front-end and PHP for the server. The primary database for the app was MySQL
-                so I got a lot of experience writing SQL queries.
+                I would say about half my tasks were similar to last term (full-stack web dev), but this term was more backend
+                and cloud focused, which I really liked. I used React, PHP, and MySQL for the web app. The CRON jobs were also in PHP
+                and many required SQL queries. For some new experimental features I got to setup and use some AWS resources that made it
+                into production!
             </p>
         </div>
         <div class="overflow-hidden">
@@ -116,18 +117,14 @@
                     <svg class="bi" width="1em" height="1em" style="background-color: green;"></svg>
                 </div>
                 <div>
-                    <h3 class="fs-2 text-body-emphasis">Become familiar with PHP</h3>
-                    <p>At the start of my term I did not know PHP and obviously needed to learn it to complete tickets.
-                        I decided to deem this goal accomplished if I could complete tickets that involved PHP on time
-                        and
-                        efficiently. The backend of the project I am on is written in PHP and the tickets I have
-                        worked on involved writing PHP.
+                    <h3 class="fs-2 text-body-emphasis">Gain more experience with PHP</h3>
+                    <p>I wanted to improve my PHP experience which I planned to do by writing more PHP that is production grade.
+                        My measure of success was if my supervisor determined that I had improved my understanding of the language.
                     </p>
-                    <p>I have definitely gained a lot of experience with PHP and developing API endpoints with
-                        it. I now have a base of understanding of how PHP works, how it is used when developing
-                        web apps, and the best practices to follow when writing PHP. My measure of success for this
-                        goal revolved around completing tickets with PHP efficiently and I think I have done that based on feedback from my supervisor.
-                        So I can say that I have achieved my goal of becoming familiar with PHP.
+                    <p>	I now have another 4 months of PHP experience and so I would deem this goal accomplished.
+                        I developed a good amount of backend logic and API endpoints using PHP and now I have a 
+                        better understanding of the language. My supervisor also said I accomplished this goal based on 
+                        the tickets I worked on.
                     </p>
                 </div>
             </div>
@@ -137,38 +134,32 @@
                     <svg class="bi" width="1em" height="1em" style="background-color: green;"></svg>
                 </div>
                 <div>
-                    <h3 class="fs-2 text-body-emphasis">Gain experience with relational databases</h3>
-                    <p>The project I am on uses MySQL as the database (which is a relational database).
-                        So as I work on tickets involving database reading/writing I will gain
-                        experience with SQL queries. My measure of success was designing a
-                        part of the schema for a table and using it for a feature.</p>
-                    <p>I have gained a lot of experience with MySQL
-                        since it's the main database system used for the web app I worked on. I designed multiple table
-                        schemas that ranged in size
-                        and interacted with them with SQL queries that I wrote and made into functions for
-                        the backend to use. Therefore, I achieved this goal since I designed and created
-                        tables and used them for features that I was building.</p>
+                    <h3 class="fs-2 text-body-emphasis">Gain experience with AWS</h3>
+                    <p>I wanted to work with AWS in my previous term so this time I wanted to achieve this goal.</p>
+                    <p>I have gained a lot of experience with AWS this term so I have definitely accomplished this goal. 
+                        This has been a goal of mine since my first internship.
+                        This term I setup multiple different resources in AWS as part of multiple features I was 
+                        working on. I made multiple new Lambdas written in Python, multiple new Event Rules in 
+                        EventBridge, new API Gateway endpoints, and did some configuration of Firehose and 
+                        CloudWatch for logging stuff.</p>
                 </div>
             </div>
             <div class="col d-flex align-items-start">
                 <div
                     class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                    <svg class="bi" width="1em" height="1em" style="background-color: red;"></svg>
+                    <svg class="bi" width="1em" height="1em" style="background-color: green;"></svg>
                 </div>
                 <div>
-                    <h3 class="fs-2 text-body-emphasis">Learn about AWS for production applications</h3>
-                    <p>I am interested in cloud computing and learning about deploying projects to the cloud.
-                        The company I am working at primarily uses AWS for their applications so my plan was to play a
-                        part
-                        in the deployment of a feature or creation of a service using AWS.
+                    <h3 class="fs-2 text-body-emphasis">Get some professional Python experience</h3>
+                    <p>I want some Python experience so this goal is accomplished if I write some Python that makes it's way into production
                     </p>
-                    <p>I did not gain experience with AWS or other cloud providers in this role. However, I did learn a
-                        little bit about Redis as I completed a ticket that utilized the Redis pipeline feature to make
-                        it faster for updating the cache. While the
-                        code that I wrote did get hosted on AWS services. I did not provision those services.
-                        Since I was on a team that supported a web application that was in production and being
-                        used by real users the cloud infrastructure was already set up. In the future this will
-                        continue to be a goal of mine.</p>
+                    <p>I did accomplish this goal but sort of just barely. The main languages we use are 
+                        JavaScript and PHP, Python is not really used here (other than for some cloud and 
+                        data stuff). For a feature I needed to setup some AWS Lambda's and our Lambda's are 
+                        all written in Python so I wrote a little bit of Python (mostly basic code for 
+                        parsing stuff out of a request) which then did go into production. I would have 
+                        liked to write some Python that had a bit more logic, but I still think this was 
+                        great progress on my goal.</p>
                 </div>
             </div>
         </div>
@@ -178,8 +169,8 @@
     <div class="container text-center">
         <h1 class="display-6 fw-bold">Conclusion</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">I really enjoyed my term at ADknown! My team was super helpful and nice. The vibe and office environment was really chill.
-                Also the drinks and snacks were great. I will be returning for my summer term!
+            <p class="lead mb-4">I really enjoyed my second term at ADknown! Cyan was amazing and a great mentor. Alex too. Everyone at the office was great and I will miss them as I return to school.
+                Also the drinks and snacks were a great perk.
             </p>
         </div>
     </div>
