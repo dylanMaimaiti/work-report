@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer 2024 - ADknown</title>
+    <link rel="icon" type="icon/x-icon" href="../images/adknownSmall.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header/Nav bar -->
+    <nav>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <a href="./index.html"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <span class="fs-4">Dylan Maimaiti</span>
+                </a>
+
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./S23.html" class="nav-link">MTO - S23</a></li>
+                    <li class="nav-item"><a href="./F23.html" class="nav-link">ADknown - F23</a></li>
+                    <li class="nav-item"><a href="" class="nav-link active" aria-current="page">ADknown - S24</a></li>
+                </ul>
+            </header>
+        </div>
+    </nav>
+
+    <!-- Basic intro about me -->
+    <div class="text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis">Software Developer Intern (Again!)</h1>
+        <h2 class="display-6 fw-bold">ADknown</h2>
+        <h4 class="display-8 fw-bold">Guelph, Ontario</h4>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">I returned to ADknown for my third software developer internship and I had a great time
+                doing full-stack web development. I worked on an internal web app used by advertisement campaign
+                managers
+                and wrote a lot of PHP, React/JavaScript, and SQL queries. This time I had much more responsibilities and got to use AWS.
+            </p>
+        </div>
+        <div class="overflow-hidden">
+            <div class="container px-5">
+                <img src="../images/adknownSmall.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="ADknown logo" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About the company -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="../images/adknownDowntownOffice.jpg" class="d-block mx-lg-auto img-fluid" alt="Picture of the downtown office exterior"
+                    width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">ADknown</h1>
+                <p class="lead">About the company</p>
+                <ul>
+                    <li>In the digital marketing industry</li>
+                    <li>Sends targeted traffic to specific web properties</li>
+                    <li>Uses Search Engine Marketing and Search Engine Optimization to direct traffic</li>
+                    <li>Located in Downtown Guelph</li>
+                    <li>Has a fridge with great Monster flavours and protein shakes</li>
+                    <li>Many employees are UofG alumni</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- What i did -->
+    <div class="container text-center">
+        <h1 class="display-6 fw-bold">What I did</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">I was in a small team responsible for the development and support of a
+                a web application used by campaign managers to direct traffic to certain sites and mobile games.
+                The web app makes it easier for campaign managers to create campaigns and it also has a bunch of
+                features for other company needs. This term I did a lot more backend tickets focused on adjacent 
+                software systems that interacted with the web app that I worked on before.
+            </p>
+            <p class="lead mb-4">Just like last term I worked on a web app that makes it easier for campaign managers
+                to create and manage their ad campaigns. It provides a suite of features
+                that cover a lot of repetitive actions and provides tools to make the marketers more efficient.
+                This term I was given more important features to implement and some of those were CRON jobs that ran 
+                on a schedule. I developed a feature that would detect 'bad' users that wouldn't generate revenue when
+                they clicked ads. I added some new logic to existing click tracking code and also created new Lambdas, EventBridge rules,
+                and S3 buckets which would detect these users and block their IP address from seeing ads for 24 hours using an existing
+                MySQL table. 
+            </p>
+            <p class="lead mb-4">
+                I would say about half my tasks were similar to last term (full-stack web dev), but this term was more backend
+                and cloud focused, which I really liked. I used React, PHP, and MySQL for the web app. The CRON jobs were also in PHP
+                and many required SQL queries. For some new experimental features I got to setup and use some AWS resources that made it
+                into production!
+            </p>
+        </div>
+        <div class="overflow-hidden">
+            <p>The office</p>
+            <div class="container px-5">
+                <img src="../images/adknownOffice.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="picture of the interior of the office" width="700"
+                    height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <!-- Learning goals + reflections -->
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h1 class="display-6 fw-bold border-bottom text-center">My Learning Goals</h1>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi" width="1em" height="1em" style="background-color: green;"></svg>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Gain more experience with PHP</h3>
+                    <p>I wanted to improve my PHP experience which I planned to do by writing more PHP that is production grade.
+                        My measure of success was if my supervisor determined that I had improved my understanding of the language.
+                    </p>
+                    <p>	I now have another 4 months of PHP experience and so I would deem this goal accomplished.
+                        I developed a good amount of backend logic and API endpoints using PHP and now I have a 
+                        better understanding of the language. My supervisor also said I accomplished this goal based on 
+                        the tickets I worked on.
+                    </p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi" width="1em" height="1em" style="background-color: green;"></svg>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Gain experience with AWS</h3>
+                    <p>I wanted to work with AWS in my previous term so this time I wanted to achieve this goal.</p>
+                    <p>I have gained a lot of experience with AWS this term so I have definitely accomplished this goal. 
+                        This has been a goal of mine since my first internship.
+                        This term I setup multiple different resources in AWS as part of multiple features I was 
+                        working on. I made multiple new Lambdas written in Python, multiple new Event Rules in 
+                        EventBridge, new API Gateway endpoints, and did some configuration of Firehose and 
+                        CloudWatch for logging stuff.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi" width="1em" height="1em" style="background-color: green;"></svg>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Get some professional Python experience</h3>
+                    <p>I want some Python experience so this goal is accomplished if I write some Python that makes it's way into production
+                    </p>
+                    <p>I did accomplish this goal but sort of just barely. The main languages we use are 
+                        JavaScript and PHP, Python is not really used here (other than for some cloud and 
+                        data stuff). For a feature I needed to setup some AWS Lambda's and our Lambda's are 
+                        all written in Python so I wrote a little bit of Python (mostly basic code for 
+                        parsing stuff out of a request) which then did go into production. I would have 
+                        liked to write some Python that had a bit more logic, but I still think this was 
+                        great progress on my goal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="container text-center">
+        <h1 class="display-6 fw-bold">Conclusion</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">I really enjoyed my second term at ADknown! Cyan was amazing and a great mentor. Alex too. Everyone at the office was great and I will miss them as I return to school.
+                Also the drinks and snacks were a great perk.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="./S23.html" class="nav-link px-2 text-body-secondary">MTO - S23</a></li>
+                <li class="nav-item"><a href="./F23.html" class="nav-link px-2 text-body-secondary">ADknown - F23</a></li>
+                <li class="nav-item"><a href="./S24.html" class="nav-link px-2 text-body-secondary">ADknown - S24</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2024 Dylan Maimaiti</p>
+        </footer>
+    </div>
+</body>
+
+</html>
